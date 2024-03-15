@@ -1,3 +1,10 @@
+use wasm_bindgen::prelude::*;
+
+#[wasm_bindgen]
+pub fn find_max(arr: &[i32]) -> Option<i32> {
+    arr.iter().max().copied()
+}
+
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
